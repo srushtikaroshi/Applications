@@ -1,1 +1,30 @@
-
+Packer Unpacker -
+This project is used to perform packing and unpacking activity. By using this
+project we can fetch data from all files and merge it into one file. We can also
+extract all packed files whenever required.
+Platform required - Windows NT platform OR Linux
+Architectural requirement - Intel 32 bit processor
+User Interface - Graphical User Interface
+Technology used - Java Programming
+Features provided by File Packer-Unpacker -
+This project is divided into two parts as Packing and Unpacking. Main purpose
+of this project is to merge large amounts of files into one file by avoiding memory
+wastage. We can extend this project by providing data security with the concept of
+Encryption.
+Packing Activity :
+• In the case of Packing activity we accept directory name and file name from
+the user.
+• We have to create a new regular file as the name specified by the user.
+• Now open the directory and traverse each file from that directory. In the
+newly created file write Metadata as header and actual file data in sequence.
+• Each name of file and its size should be written in log file which gets created
+in the system directory.
+• After packing, display the packing report.
+UnPacking Activity :
+• In case of UnPacking activity we accept packed file names from user.
+• Open the packed file in read mode and perform below activity as-
+• Read header. 
+• From the name specified in the header create new file.
+• Write data into a newly created file from packed file.
+• Repeat all above steps till we reach the end of the unpacked file.
+• After unpacking display unpacking report.
